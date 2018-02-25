@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get -y install qt59base qt59webengine libz-dev liblz-dev libbz2-dev libarchive-dev xdg-utils libpoppler-qt5-dev libqt5scintilla2-dev
+  - sudo apt-get -y install qt59base qt59webengine libz-dev zlib1g-dev liblz-dev libbz2-dev libarchive-dev xdg-utils libpoppler-qt5-dev libqt5scintilla2-dev libdjvulibre-dev
   - source /opt/qt*/bin/qt*-env.sh
 
 script:
