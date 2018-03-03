@@ -10,6 +10,7 @@ before_install:
 install:
   - sudo apt-get -y install qt59base qt59webengine libz-dev zlib1g-dev liblz-dev libbz2-dev libarchive-dev xdg-utils libpoppler-qt5-dev libqt5scintilla2-dev libdjvulibre-dev
   - source /opt/qt*/bin/qt*-env.sh
+  - sudo mkdir -p /usr/include/x86_64-linux-gnu/qt5/ ; sudo ln -s /usr/include/qt5/Qsci /usr/include/x86_64-linux-gnu/qt5/ # https://github.com/openscad/openscad/pull/1778
 
 script:
   - qmake CONFIG+=release PREFIX=/usr
